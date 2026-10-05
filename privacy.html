@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Nugget</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<nav class="top"><a href="index.html">Nugget</a><a href="terms.html">Terms of Use</a></nav>
+<header>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Nugget: AI Flashcards &amp; Tutor · Last updated 5 October 2026</p>
+</header>
+
+<div class="note">
+  <p>Nugget is in development and not yet on the App Store. This policy describes the app as it is
+  being built. Before release we will check it against the finished app, update it, and change the date
+  above.</p>
+</div>
+
+<h2>The short version</h2>
+<ul>
+  <li>There is no account. Your decks, notes, cards, recordings and study history are stored on your
+      iPhone, not on our servers.</li>
+  <li>Lecture recordings are transcribed on your iPhone by Apple's on-device speech recognition.
+      <strong>Audio never leaves your phone.</strong></li>
+  <li>Short material is turned into notes and cards on your iPhone. Longer material is sent as text to our
+      server and on to an AI provider, Anthropic, <strong>only after you agree</strong>, and our server
+      keeps none of it.</li>
+  <li>Our server keeps one thing: a daily count of how much each subscription used, for cost monitoring
+      and abuse prevention.</li>
+  <li>No ads, no tracking, no selling of data, and nothing is used to train AI models.</li>
+</ul>
+
+<h2 id="who">1. Who we are</h2>
+<p>Nugget is published by Yusuf Demirtaş, an individual developer, who is the data controller for the
+purposes of this policy. You can reach us at
+<a href="mailto:tiko23miko23@gmail.com">tiko23miko23@gmail.com</a>.</p>
+
+<h2 id="identifiers">2. There is no account, but there are identifiers</h2>
+<p>Nugget does not ask you to register. It never asks for your name, email address, phone number,
+address or contacts. During setup it asks for your date of birth only to confirm you are 13 or older
+(section 15); the answer stays on your phone.</p>
+<p>Some per-installation identifiers still exist, and we would rather list them than let "no account"
+suggest there is nothing:</p>
+<ul>
+  <li><strong>A subscription identifier.</strong> Our subscription provider, RevenueCat, gives the app an
+      anonymous identifier: a random string with no name or contact details in it. It is the only
+      identifier our server ever sees. It lets our server check that a free trial or subscription is
+      active before doing any AI work, and it keys the daily usage count in section 6. It is still a
+      persistent identifier, and the privacy laws of several places treat it, and everything tied to it,
+      as personal information. So do we.</li>
+  <li><strong>Analytics and crash-report identifiers.</strong> PostHog and Sentry (section 9) each create
+      their own random identifier for the installation.</li>
+  <li><strong>Apple's identifier for vendor.</strong> Nugget's own code does not read it, but RevenueCat's
+      software sends it to RevenueCat with its requests (section 8). It is not the advertising
+      identifier and needs no permission.</li>
+</ul>
+<p>Nugget never reads Apple's advertising identifier and never asks to track you.</p>
+
+<h2 id="on-device">3. What stays on your phone</h2>
+<p>Everything you make in Nugget is stored in the app's own storage on your iPhone: your folders,
+decks, notes, cards, images, recordings, transcripts, the text read from documents and photos you feed
+in, your review history and schedule, your streak, XP, Pals and exam plans, and your settings. We cannot
+see any of it.</p>
+<p>Because it lives only on your phone, it is protected by your phone's passcode and iOS data
+protection, and it is included in your iPhone's iCloud or computer backup like the rest of your apps'
+data; that is how it moves to a new iPhone. A setting lets you leave recordings out of backups. You can
+also save everything to a file of your own with <em>Export everything</em> in Settings, and restore it
+from that file.</p>
+<p>If you delete the app, or use <em>Delete all data</em> in Settings, this data is gone from the phone.
+We have no copy and cannot restore it.</p>
+
+<h2 id="recordings">4. Recording lectures: audio never leaves your phone</h2>
+<p>When you record a lecture, the audio is saved on your iPhone and transcribed on the iPhone by Apple's
+on-device speech recognition (the Speech framework). The audio is not sent to us, to Apple or to anyone
+else. The language files that speech recognition needs may be downloaded from Apple the first time you
+use a language; that download sends nothing you recorded.</p>
+<p>The transcript is text, and it is treated like any other text you feed in (section 5). Audio is kept
+until you delete it; deleting a recording's audio keeps its transcript.</p>
+<p>Recording other people may need their permission where you are, and your school may have its own
+rules on recording lectures. Our <a href="terms.html#acceptable-use">Terms of Use</a> ask you to follow
+them.</p>
+
+<h2 id="ai">5. Making notes and cards: on your phone first, the cloud only with your consent</h2>
+<p>Nugget uses AI for two jobs: turning a transcript, document, photos or pasted text into structured
+notes ("Clean up"), and turning notes into flashcards. It does them in one of two places.</p>
+<h3>On your iPhone</h3>
+<p>On iPhones that support Apple Intelligence, shorter material is processed by Apple's on-device
+language model. Nothing is sent anywhere. Text in photos and scanned pages is always read on the iPhone
+with Apple's text recognition before anything else happens.</p>
+<h3>In the cloud, after you agree</h3>
+<p>Longer material, and everything on iPhones without Apple Intelligence, is processed in the cloud.
+The first time that is needed, Nugget shows a consent screen that says what will be sent and to whom.
+Nothing is sent until you agree, and you can withdraw consent at any time in Settings; Nugget then works
+only on the phone.</p>
+<p>What is sent, for each request:</p>
+<ul>
+  <li>a section of text: part of a transcript, of a document's text, of text read from photos, of text
+      you pasted, or of your notes;</li>
+  <li>the options you chose, such as how many cards to make, the card types and the language;</li>
+  <li>the subscription identifier from section 2, so our server can check your subscription.</li>
+</ul>
+<p>Pictures are sent only in one case: a handwritten page that the phone could not read reliably,
+and only if you allow it for that page. The picture is then sent so the AI can read the handwriting.</p>
+<p>The text goes to our server (section 6), which checks your subscription and passes the text,
+without the identifier, to our AI provider (section 7). The notes or cards that come back are shown to you
+in a review tray; nothing is saved until you accept it, and it is then saved only on your phone.</p>
+<p>Please do not feed in material containing other people's sensitive personal information (for
+example their health records) unless you have a right to and your study needs it.</p>
+
+<h2 id="server">6. What our server keeps</h2>
+<p>Our server is a single function hosted by Supabase. It keeps no notes, cards, transcripts, documents,
+pictures or results: it holds each request only in memory while it is answered. It writes exactly one
+kind of record:</p>
+<div class="scroll"><table>
+  <tr><th>Record</th><th>What it contains</th><th>Why</th><th>How long</th></tr>
+  <tr><td>Daily usage</td>
+      <td>The subscription identifier, the date, how many sections of text were processed that day, how
+      many AI tokens they used, and when the subscription was last checked</td>
+      <td>To watch the cost of the AI service, and to stop automated abuse with a daily ceiling far above
+      what a student uses</td>
+      <td>Up to 12 months</td></tr>
+</table></div>
+<p>To check a subscription, our server asks RevenueCat whether the identifier has an active trial or
+subscription and remembers the answer, in memory only, for up to an hour.</p>
+<p>Supabase also keeps its own short-lived technical logs of requests to our server, such as the time,
+the response code and the IP address a request came from. They never contain what you sent, because our
+server never logs it. They expire on Supabase's schedule.</p>
+<p>If you email us, your email and our reply stay in our support mailbox (section 8) until the matter
+is closed, and are deleted on request.</p>
+
+<h2 id="anthropic">7. The AI provider</h2>
+<p>Cloud notes and cards are written by Anthropic's Claude models. We want to be exact here rather
+than reassuring:</p>
+<ul>
+  <li>We do not use your material to train AI models, and Anthropic's commercial terms state that it may
+      not train models on customer content from its services.</li>
+  <li>Anthropic's documentation states that inputs and outputs are automatically deleted within 30 days,
+      with exceptions: where a request is flagged under Anthropic's usage policy, it may be kept for up to
+      two years, and trust-and-safety classification scores for up to seven; and longer where the law
+      requires it.</li>
+  <li>Anthropic receives no identifier from us: nothing it is sent says which installation it came
+      from, though the text itself may contain names or other details you fed in.</li>
+</ul>
+<p>So "our server keeps nothing" is true of us, and up to thirty days at Anthropic is not zero. Deleting
+a deck on your phone does not delete Anthropic's copy, and Anthropic offers no published way to delete
+an individual request early.</p>
+
+<h2 id="companies">8. The other companies involved</h2>
+<div class="scroll"><table>
+  <tr><th>Who</th><th>What they handle</th></tr>
+  <tr><td>Supabase</td><td>Hosts our server function and the daily usage records (section 6). Text you send to
+      the cloud passes through it on its way to the AI provider. Processing is in India (Mumbai).</td></tr>
+  <tr><td>Anthropic</td><td>Writes cloud notes and cards from the text, or a handwritten page's picture, as
+      described in section 7. Processing is in the United States.</td></tr>
+  <tr><td>Apple</td><td>Processes payment; provides on-device speech recognition, text recognition and the
+      on-device language model, none of which sends your content to Apple.</td></tr>
+  <tr><td>RevenueCat</td><td>Records what you bought and whether it is active, with the subscription identifier,
+      the app and iOS version, the device model, your App Store country and Apple's identifier for vendor
+      (section 2). Answers our server's subscription checks.</td></tr>
+  <tr><td>PostHog</td><td>Product analytics (section 9).</td></tr>
+  <tr><td>Sentry</td><td>Crash and error reports (section 9).</td></tr>
+  <tr><td>Google (Gmail)</td><td>Our support mailbox: any email you send us. The app sends Google nothing.</td></tr>
+</table></div>
+<p>Supabase, Anthropic, RevenueCat, PostHog and Sentry process this data for us as service providers,
+under terms that limit them to providing their service to us and require the same or equal protection
+as this policy. Apple handles what it receives under its own privacy policy, and Google holds an email you
+send us under its own terms.</p>
+<p>If Nugget is transferred to a company we control or to a new owner, the information in section 6
+goes with it, and the new owner must keep to this policy for it.</p>
+
+<h2 id="analytics">9. Analytics and crash reports</h2>
+<p>Nugget sends product analytics through PostHog and crash and error reports through Sentry, so we can
+see which features are used and fix what breaks. Both can be switched off remotely by us, and Settings
+will let you switch them off on your phone.</p>
+<p><strong>PostHog</strong> receives event names with numbers and fixed codes, never free text: for
+example that the app was opened, which tab was selected, that a study session ended with how many cards
+were reviewed, or that something was shared, with the kind of material and the deck's size. Each event
+carries the app's version, the device model, the iOS version, the language and time zone, and the IP
+address the request came from, which PostHog can use to work out an approximate location. We do not use
+PostHog's screen recording, automatic capture of taps, or person profiles.</p>
+<p><strong>Sentry</strong> receives crash and error reports: what failed, short diagnostic messages
+chosen from a fixed list, and technical details about the app and the device, such as the app version,
+device model, iOS version, memory and language. We switch off Sentry's collection of personal
+information, screenshots and view hierarchies.</p>
+<p><strong>Never included in analytics or crash reports:</strong> note text, card text, transcripts,
+audio, document or photo contents, deck names, or what you sent to the AI.</p>
+
+<h2 id="subscriptions">10. Subscriptions</h2>
+<p>Purchases are made through Apple and managed through RevenueCat (section 8). We never see your
+payment details. You manage or cancel a subscription in the Settings app on your iPhone (your name, then
+Subscriptions), which Nugget's Settings can open for you.</p>
+
+<h2 id="permissions">11. Permissions the app asks for</h2>
+<div class="scroll"><table>
+  <tr><th>Permission</th><th>Why</th><th>If you decline</th></tr>
+  <tr><td>Microphone</td><td>To record lectures</td><td>Recording is unavailable; everything else works</td></tr>
+  <tr><td>Speech Recognition</td><td>To transcribe recordings on your iPhone. iOS asks for this permission even
+      though the transcription happens on the phone</td><td>Recordings are saved but not transcribed</td></tr>
+  <tr><td>Camera</td><td>To scan pages and photograph notes</td><td>You can still pick existing photos or files</td></tr>
+  <tr><td>Photos</td><td>To pick photos of notes or slides you choose</td><td>You can still use the camera or files</td></tr>
+  <tr><td>Notifications</td><td>Reminders for due cards, your streak and exam dates, all scheduled on the phone</td>
+      <td>No reminders; nothing else changes</td></tr>
+</table></div>
+
+<h2 id="sharing">12. Sharing what you make</h2>
+<p>You can export a deck, its notes or its cards as a file, a PDF or an image. Nothing leaves your phone
+until you tap Share and choose where it goes; the app never reads your contacts. A shared file contains
+the content you chose to share, which the people you send it to can read, and carries the Nugget name
+and a link to the App Store. A shared deck file does not include your review history or recordings.</p>
+
+<h2 id="no-selling">13. Selling, sharing and advertising</h2>
+<p>We do not sell personal information, share it for cross-context behavioural advertising, show ads,
+or track you across other companies' apps and websites. Nugget contains no advertising software.</p>
+
+<h2 id="label">14. Apple's privacy label</h2>
+<p>In the App Store, Nugget declares:</p>
+<ul>
+  <li><strong>Data linked to you</strong>, through the subscription and analytics identifiers:
+      Identifiers (User ID, Device ID), Purchases (Purchase History), Usage Data (Product Interaction),
+      Diagnostics (Crash Data, Performance Data, Other Diagnostic Data) and Location (Coarse Location,
+      worked out from an IP address).</li>
+  <li><strong>Data not linked to you</strong>: User Content (Other User Content, and Photos for a
+      handwritten page you allow): the text you send to the cloud. Our AI provider keeps it for up to 30
+      days or longer (section 7) without any identifier from us. We declare it because Apple counts data
+      kept off the device for longer than it takes to answer the request.</li>
+  <li><strong>Data used to track you</strong>: none.</li>
+</ul>
+<p>Audio recordings, and anything processed only on your phone, are not collected.</p>
+
+<h2 id="children">15. Children and teenagers</h2>
+<p>Nugget is for people aged 13 and over. During setup it asks for your date of birth and does not open
+for anyone under 13; the date stays on your phone and is never sent to us. We do not knowingly collect
+personal information from children under 13. If you believe a child under 13 has used Nugget, write to
+us and we will delete what our server holds for that installation.</p>
+<p>If you are under 18, or under the age of majority where you live, use Nugget with your parent's or
+guardian's permission. Where the law requires a parent's consent before your text is sent to an AI
+service, the consent screen in section 5 is for them to agree to.</p>
+
+<h2 id="rights">16. Your rights and deleting your data</h2>
+<p><strong>On your phone.</strong> <em>Delete all data</em> in Settings deletes your decks, notes,
+cards, media, recordings, transcripts, history and settings from the phone, and the app's entries in the
+iOS keychain. It does not cancel a subscription, which you manage through Apple (section 10).</p>
+<p><strong>On our server.</strong> The only thing our server holds is the daily usage record in section 6.
+To have it deleted, email us with the anonymous identifier the app shows in Settings; we will delete it
+and confirm. Anthropic's copy of what you sent cannot be found from that identifier and is deleted on
+Anthropic's schedule (section 7).</p>
+<p><strong>Other requests.</strong> Wherever you live, you can ask us whether we hold personal
+information about you, for a copy of it, to correct it or to delete it, and you can withdraw your consent
+to cloud processing at any time in Settings. Email
+<a href="mailto:tiko23miko23@gmail.com">tiko23miko23@gmail.com</a>; we will not ask you to create an
+account to make a request. We answer within 30 days, and tell you if we need longer where the law allows
+it. If we decline a request, you can appeal by replying with "Appeal". Depending on where you live, you
+may also have rights to portability, to object to or restrict processing, and to complain to your data
+protection authority (in Brazil, the ANPD; in the EU and UK, your national authority). We will not treat
+you differently for making a request.</p>
+
+<h2 id="transfers">17. Where data is processed, and security</h2>
+<p>Text you send to the cloud passes through our server in India (Supabase, Mumbai) and is processed by
+our AI provider in the United States. RevenueCat, PostHog and Sentry operate in the United States. Where
+the law requires a safeguard for these transfers, we rely on our providers' standard contractual clauses
+or equivalent terms. Everything is sent encrypted (HTTPS/TLS). On your phone, Nugget's data is protected
+by iOS data protection. No transmission or storage is completely secure, and we cannot promise absolute
+security.</p>
+
+<h2 id="changes">18. Changes</h2>
+<p>If this policy changes, the date above changes with it. For a material change, we describe it in the
+release notes of the app update that goes with it and at the top of this page before it takes effect. If a
+change would let us collect a new kind of information, or use what we hold in a materially different way,
+we will ask for your agreement in the app first. Earlier versions of this policy are in this site's public
+history at <a href="https://github.com/yusufdmrts23/nugget-legal/commits/main/privacy.html">github.com/yusufdmrts23/nugget-legal</a>.</p>
+
+<h2 id="contact">19. Contact</h2>
+<p>Questions, requests or complaints:
+<a href="mailto:tiko23miko23@gmail.com">tiko23miko23@gmail.com</a>.</p>
+
+<footer>Nugget: AI Flashcards &amp; Tutor · <a href="terms.html">Terms of Use</a> · Last updated 5 October 2026</footer>
+</div>
+</body>
+</html>
