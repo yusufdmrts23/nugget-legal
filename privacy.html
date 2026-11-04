@@ -11,7 +11,7 @@
 <nav class="top"><a href="index.html">Nugget</a><a href="terms.html">Terms of Use</a></nav>
 <header>
   <h1>Privacy Policy</h1>
-  <p class="meta">Nugget: AI Flashcards &amp; Tutor · Last updated 5 October 2026</p>
+  <p class="meta">Nugget: AI Flashcards &amp; Tutor · Last updated 4 November 2026</p>
 </header>
 
 <div class="note">
@@ -26,9 +26,10 @@
       iPhone, not on our servers.</li>
   <li>Lecture recordings are transcribed on your iPhone by Apple's on-device speech recognition.
       <strong>Audio never leaves your phone.</strong></li>
-  <li>Short material is turned into notes and cards on your iPhone. Longer material is sent as text to our
-      server and on to an AI provider, Anthropic, <strong>only after you agree</strong>, and our server
-      keeps none of it.</li>
+  <li>To make notes and cards with AI, Nugget sends the text of a recording or document to our server and
+      on to an AI provider, Anthropic, <strong>only after you allow AI notes</strong>. Nothing is sent
+      before, and our server keeps none of it. Without AI notes you can still record, keep transcripts,
+      write your own notes and cards, and study.</li>
   <li>Our server keeps one thing: a daily count of how much each subscription used, for cost monitoring
       and abuse prevention.</li>
   <li>No ads, no tracking, no selling of data, and nothing is used to train AI models.</li>
@@ -84,18 +85,25 @@ until you delete it; deleting a recording's audio keeps its transcript.</p>
 rules on recording lectures. Our <a href="terms.html#acceptable-use">Terms of Use</a> ask you to follow
 them.</p>
 
-<h2 id="ai">5. Making notes and cards: on your phone first, the cloud only with your consent</h2>
+<h2 id="ai">5. Making notes and cards with AI: only after you allow it</h2>
 <p>Nugget uses AI for two jobs: turning a transcript, document, photos or pasted text into structured
-notes ("Clean up"), and turning notes into flashcards. It does them in one of two places.</p>
-<h3>On your iPhone</h3>
-<p>On iPhones that support Apple Intelligence, shorter material is processed by Apple's on-device
-language model. Nothing is sent anywhere. Text in photos and scanned pages is always read on the iPhone
-with Apple's text recognition before anything else happens.</p>
-<h3>In the cloud, after you agree</h3>
-<p>Longer material, and everything on iPhones without Apple Intelligence, is processed in the cloud.
-The first time that is needed, Nugget shows a consent screen that says what will be sent and to whom.
-Nothing is sent until you agree, and you can withdraw consent at any time in Settings; Nugget then works
-only on the phone.</p>
+notes, and turning notes into flashcards. Both are done in the cloud by our AI provider (section 7), for
+everyone and whatever the length of the material, and only after you allow it.</p>
+<h3>What happens on your iPhone</h3>
+<p>Recordings are transcribed on the iPhone (section 4). Text in photos and scanned pages is read on the
+iPhone with Apple's text recognition, and a PDF's text is read on the iPhone too, before anything else
+happens. A list of terms and definitions you paste becomes flashcards on the iPhone, without AI. Studying,
+and the notes and cards you write yourself, never need AI.</p>
+<h3>AI notes, after you allow them</h3>
+<p>When you first open Nugget, it asks whether you allow AI notes, on a screen that says what will be
+sent and to whom. It asks again only when you use an AI feature without having allowed it. Nothing is
+preselected and nothing is sent until you tap <em>Allow AI notes</em>. If you have allowed AI notes and are
+offline, the text waits on your iPhone and is sent once you are back online with the app open.</p>
+<p>You can change your answer at any time in Me → AI notes. If you don't allow AI notes, or turn them off,
+nothing more is sent, and notes still waiting to be made are cancelled. Recording, transcripts and
+playback, your own notes and cards, imports, studying and every export keep working: Nugget keeps a
+recording as a note with its transcript, or a document as a note with its text, and each AI feature asks
+you again before anything is sent.</p>
 <p>What is sent, for each request:</p>
 <ul>
   <li>a section of text: part of a transcript, of a document's text, of text read from photos, of text
@@ -107,7 +115,7 @@ only on the phone.</p>
 and only if you allow it for that page. The picture is then sent so the AI can read the handwriting.</p>
 <p>The text goes to our server (section 6), which checks your subscription and passes the text,
 without the identifier, to our AI provider (section 7). The notes or cards that come back are shown to you
-in a review tray; nothing is saved until you accept it, and it is then saved only on your phone.</p>
+to read first; nothing is saved until you tap Save, and it is then saved only on your phone.</p>
 <p>Please do not feed in material containing other people's sensitive personal information (for
 example their health records) unless you have a right to and your study needs it.</p>
 
@@ -133,7 +141,7 @@ server never logs it. They expire on Supabase's schedule.</p>
 is closed, and are deleted on request.</p>
 
 <h2 id="anthropic">7. The AI provider</h2>
-<p>Cloud notes and cards are written by Anthropic's Claude models. We want to be exact here rather
+<p>AI notes and cards are written by Anthropic's Claude models. We want to be exact here rather
 than reassuring:</p>
 <ul>
   <li>We do not use your material to train AI models, and Anthropic's commercial terms state that it may
@@ -154,10 +162,10 @@ an individual request early.</p>
   <tr><th>Who</th><th>What they handle</th></tr>
   <tr><td>Supabase</td><td>Hosts our server function and the daily usage records (section 6). Text you send to
       the cloud passes through it on its way to the AI provider. Processing is in India (Mumbai).</td></tr>
-  <tr><td>Anthropic</td><td>Writes cloud notes and cards from the text, or a handwritten page's picture, as
+  <tr><td>Anthropic</td><td>Writes AI notes and cards from the text, or a handwritten page's picture, as
       described in section 7. Processing is in the United States.</td></tr>
-  <tr><td>Apple</td><td>Processes payment; provides on-device speech recognition, text recognition and the
-      on-device language model, none of which sends your content to Apple.</td></tr>
+  <tr><td>Apple</td><td>Processes payment; provides on-device speech recognition and text recognition,
+      neither of which sends your content to Apple.</td></tr>
   <tr><td>RevenueCat</td><td>Records what you bought and whether it is active, with the subscription identifier,
       the app and iOS version, the device model, your App Store country and Apple's identifier for vendor
       (section 2). Answers our server's subscription checks.</td></tr>
@@ -250,7 +258,7 @@ and confirm. Anthropic's copy of what you sent cannot be found from that identif
 Anthropic's schedule (section 7).</p>
 <p><strong>Other requests.</strong> Wherever you live, you can ask us whether we hold personal
 information about you, for a copy of it, to correct it or to delete it, and you can withdraw your consent
-to cloud processing at any time in Settings. Email
+to cloud processing at any time in Me → AI notes. Email
 <a href="mailto:tiko23miko23@gmail.com">tiko23miko23@gmail.com</a>; we will not ask you to create an
 account to make a request. We answer within 30 days, and tell you if we need longer where the law allows
 it. If we decline a request, you can appeal by replying with "Appeal". Depending on where you live, you
@@ -277,7 +285,7 @@ history at <a href="https://github.com/yusufdmrts23/nugget-legal/commits/main/pr
 <p>Questions, requests or complaints:
 <a href="mailto:tiko23miko23@gmail.com">tiko23miko23@gmail.com</a>.</p>
 
-<footer>Nugget: AI Flashcards &amp; Tutor · <a href="terms.html">Terms of Use</a> · Last updated 5 October 2026</footer>
+<footer>Nugget: AI Flashcards &amp; Tutor · <a href="terms.html">Terms of Use</a> · Last updated 4 November 2026</footer>
 </div>
 </body>
 </html>
